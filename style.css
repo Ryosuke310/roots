@@ -7,6 +7,12 @@
 img{
     width: 100%;
 }
+p{
+    padding: 0 10%;
+    margin: 20px auto 40px;
+    color: #ffffff;
+    font-size: 12px;
+}
 /* 画面外にいる状態 */
 .fadein {
     opacity : 0.1;
