@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html lang="ja">
+    <head>
+        <title>会話風</title>
+        <meta charset="utf-8">
+        <link href="./style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+            <div>
+                
+                <section class="fadein">
+                    <img src="./image/kaiwa1.jpg">
+                </section>
+            
+                <section class="fadein">
+                    <img src="./image/kaiwa2.jpg">
+                </section>
+                <section class="fadein">
+                        <img src="./image/kaiwa1.jpg">
+                    </section>
+                
+                    <section class="fadein">
+                        <img src="./image/kaiwa2.jpg">
+                    </section>                <section class="fadein">
+                            <img src="./image/kaiwa1.jpg">
+                        </section>
+                    
+                        <section class="fadein">
+                            <img src="./image/kaiwa2.jpg">
+                        </section>                <section class="fadein">
+                                <img src="./image/kaiwa1.jpg">
+                            </section>
+                        
+                            <section class="fadein">
+                                <img src="./image/kaiwa2.jpg">
+                            </section>                <section class="fadein">
+                                    <img src="./image/kaiwa1.jpg">
+                                </section>
+                            
+                                <section class="fadein">
+                                    <img src="./image/kaiwa2.jpg">
+                                </section>                <section class="fadein">
+                                        <img src="./image/kaiwa1.jpg">
+                                    </section>
+                                
+                                    <section class="fadein">
+                                        <img src="./image/kaiwa2.jpg">
+                                    </section>                <section class="fadein">
+                                            <img src="./image/kaiwa1.jpg">
+                                        </section>
+                                    
+                                        <section class="fadein">
+                                            <img src="./image/kaiwa2.jpg">
+                                        </section>                <section class="fadein">
+                                                <img src="./image/kaiwa1.jpg">
+                                            </section>
+                                        
+                                            <section class="fadein">
+                                                <img src="./image/kaiwa2.jpg">
+                                            </section>                <section class="fadein">
+                                                    <img src="./image/kaiwa1.jpg">
+                                                </section>
+                                            
+                                                <section class="fadein">
+                                                    <img src="./image/kaiwa2.jpg">
+                                                </section>                <section class="fadein">
+                                                        <img src="./image/kaiwa1.jpg">
+                                                    </section>
+                                                
+                                                    <section class="fadein">
+                                                        <img src="./image/kaiwa2.jpg">
+                                                    </section>
+            </div>
+
+        <script>
+            $(function(){
+                $(window).scroll(function (){
+                    $('.fadein').each(function(){
+                        var elemPos = $(this).offset().top;
+                        var scroll = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        if (scroll > elemPos - windowHeight + 200){
+                            $(this).addClass('scrollin');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+    </html>
